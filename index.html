@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 opertaor</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        /*
+        destructure a, b , and c with defalut values 10,20 and 30 respectively. wirtee the destructing assignments.
+        */
+         const [one, two, three = 3] = [1, 2, 5]
+    console.log(one, two, three);
+
+    const obj1 = {a:1,b:undefined,c:null }
+console.log(obj1);
+
+const {a:ee} = obj1
+
+/////
+/*given the object const obj= {a:{b:c:1}d:2}; destructue to extract c and d in mone line .
+
+*/
+
+  const hey = {a:{b:{c:1}},d:2};
+
+  const {q,w} = hey
+ console.log(q);
+ 
+// {q,{w,{e}}  }
+
+
+const [x,[y, [z, Z]]] = ["India", ["USA", ["UK", "Italy"]], "Pakistan"]
+    console.log(z, Z);
+///use array destructing to extract the first and third elemetns into variables.
+
+//4
+const arr = [1,2,3,4,5];
+
+const [i,,j] =  [1,2,3,4,5];
+
+console.log(i,j);
+
+////given cosnt key = "name" and cosnt obj ={name:"john"}; use destructuring to extract the values of name the key variable.
+
+
+const key = "name";
+const obj2 = {name: "John"}
+
+console.log(obj2);
+
+//ues optional chaining to safelty call the fucation and access the vale of c.
+
+// ues optional chainin to safley access the value of num.
+// (1) cosnt arr = [[{num :1}]]
+// (2) cosnt arr = [{a:[{num :1}]}]
+
+//create a funcation that takes two arrays an insert the second array in teh middle ofthe first array.
+        const arr1 = [1,10];
+        const arr2 = [2,3,4,5,6,7,8,9]
+        const [a,b] = arr1
+         const arr3 = [a,2,3,4,5,6,7,8,9,b]
+        console.log(arr3);
+
+        const [n,nn]= [15,150]
+        const total = [n,45,75,35,nn] 
+        console.log(total);
+        
+
+
+// ues nullish coalescing and logical OR to est a variable c to a if it's not null or undefined ,otherwies to b, or to true if b is falsy.
+
+const aa = undefined;
+const bb = false
+
+console.log(aa || bb);
+
+
+
+// given cosnt obj = {a:{b: null}}; use a comkbination of optional chaining and logical AND to set a variable c to be only if a exists and is truthy .
+
+//write a funcation getUserAddress that takes a uesr oblject as an argument. the uesrs oblject may have an address nested within, and you needd to retrieve the street name.  Ues a combination of destructuring optaional chaining and nullish coalescing to handle various scenarios efficenetly.
+
+// write a funcation validateUesr that takes an object user as an argument and chedks if user exists,has a name property, and if user. name it truthy.Ues short-circuting to handle these checks efficiently.
+
+
+
+
+
+
+    </script>
+</body>
+</html>
