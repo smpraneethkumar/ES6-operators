@@ -14,23 +14,20 @@
         /*
         destructure a, b , and c with defalut values 10,20 and 30 respectively. wirtee the destructing assignments.
         */
-         const [one, two, three = 3] = [1, 2, 5]
-    console.log(one, two, three);
-
+         
     const obj1 = {a:1,b:undefined,c:null }
-console.log(obj1);
 
-const {a:ee} = obj1
-
+    const  rrr = {a:10,b:20,c:30}
+console.log(rrr);
 /////
 /*given the object const obj= {a:{b:c:1}d:2}; destructue to extract c and d in mone line .
 
 */
 
-  const hey = {a:{b:{c:1}},d:2};
+  const hey = {aw:{bw:{cw:1}},dw:2};
 
-  const {q,w} = hey
- console.log(q);
+  const {aw:{bw:{cw:}},dw:} = hey
+ console.log(cw,dw);
  
 // {q,{w,{e}}  }
 
@@ -83,13 +80,42 @@ console.log(aa || bb);
 
 
 // given cosnt obj = {a:{b: null}}; use a comkbination of optional chaining and logical AND to set a variable c to be only if a exists and is truthy .
+const obj4 = {t:{y:null}};
+ const c = obj4.t?.y && obj4.t.y;
+console.log(c);
+
+
+
 
 //write a funcation getUserAddress that takes a uesr oblject as an argument. the uesrs oblject may have an address nested within, and you needd to retrieve the street name.  Ues a combination of destructuring optaional chaining and nullish coalescing to handle various scenarios efficenetly.
+const user1 =
+{
+name: 'John',
+address: { street: { name: 'Main Street' } }
+};
+
+ const user2 = { name: 'Jane', address: null };
+
+ const user3 = { name: 'Bob' };
+
+const {address:{street:{name}}} = user1;
+
+console.log(name);
+
+
+
 
 // write a funcation validateUesr that takes an object user as an argument and chedks if user exists,has a name property, and if user. name it truthy.Ues short-circuting to handle these checks efficiently.
 
+    const userMe = {name : 'john'}
+    const use = {name :"praneeth"}
 
+    const check = name.john || "it is invaled name"
 
+    console.log(check);
+    console.log();
+    
+    
 
 
 
